@@ -59,10 +59,21 @@
     </div>
   </section>
 
-  <main id="projects" class="container mx-auto max-w-6xl px-6 py-20">
+  <main class="container mx-auto max-w-6xl px-6 py-20">
+    <section aria-labelledby="performance-heading" class="mb-20">
+      <p class="uppercase tracking-[0.25em] text-sm font-semibold text-amber-800 mb-2">Listen & watch</p>
+      <h2 id="performance-heading" class="serif text-4xl md:text-5xl font-semibold text-stone-900 mb-8">A moment of guitar</h2>
+      <video controls playsinline preload="none" poster="guitar-video-poster.jpg"
+             width="1280" height="720" aria-label="Mike Emblem playing guitar"
+             class="block w-full aspect-video rounded-2xl shadow-lg bg-black">
+        <source src="guitar-performance.mp4" type="video/mp4">
+        Your browser does not support this video. <a href="guitar-performance.mp4">Download the performance</a>.
+      </video>
+    </section>
+    <section id="projects" aria-labelledby="projects-heading">
     <div class="mb-10">
       <p class="uppercase tracking-[0.25em] text-sm font-semibold text-amber-800 mb-2">Selected work</p>
-      <h2 class="serif text-4xl md:text-5xl font-semibold text-stone-900">Music & stories</h2>
+      <h2 id="projects-heading" class="serif text-4xl md:text-5xl font-semibold text-stone-900">Music & stories</h2>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <a href="/mymusic/" class="group relative flex items-end min-h-[430px] overflow-hidden rounded-2xl shadow-lg">
@@ -100,6 +111,7 @@
         </div>
       </a>
     </div>
+    </section>
   </main>
 
   <footer class="bg-stone-950 text-stone-400">
